@@ -12,6 +12,10 @@ body {
     font-style: normal;
 }
 
+.center {
+    margin: 0 auto;
+}
+
 .hero {
     background-color: $colorLg;
 
@@ -19,7 +23,6 @@ body {
         max-width: $contentWidth;
         padding-top: 196px;
         padding-bottom: 156px;
-        margin: 0 auto;
     }
 
     &__heading {
@@ -57,5 +60,69 @@ body {
 
     span {
         font-weight: 700;
+    }
+}
+
+.about {
+    background-color: $colorBk;
+
+    &__container {
+        max-width: $contentWidth;
+        padding: 94px 0 50px;
+    }
+
+    &__games-wrapper {
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__heading {
+        @extend %headingLg;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+        margin-bottom: 72px;
+        max-width: 760px;
+    }
+}
+
+.about__game {
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &-inner-container {
+        background-color: #fff;
+        padding: 32px 32px 36px 32px;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    &-number {
+        background-color: #f7f7f7;
+        padding: 8px 16px 10px 16px;
+        display: block;
+        width: max-content;
+        border-radius: 52.6px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17.6px;
+        margin-bottom: 16px;
+        color: $colorBk
+    }
+
+    &-title {
+        @extend %headingSm;
+        color: $colorBk;
     }
 }
