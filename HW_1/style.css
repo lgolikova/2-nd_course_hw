@@ -26,11 +26,38 @@ body {
 
 .hero {
   background-color: #E1FF8F;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  z-index: 1;
+}
+.hero__star-group {
+  right: 0;
+  top: 0;
+}
+.hero__star-1 {
+  top: 94px;
+  left: 63px;
+}
+.hero__star-2 {
+  top: 69px;
+  left: 156px;
+}
+.hero__star-3 {
+  right: 455px;
+  bottom: 135px;
+}
+.hero__star-4 {
+  right: 344px;
+  bottom: 59px;
 }
 .hero__container {
   max-width: 1200px;
   padding-top: 196px;
   padding-bottom: 156px;
+  position: relative;
+  z-index: 2;
 }
 .hero__heading {
   color: #202027;
@@ -55,6 +82,9 @@ body {
   padding: 16px 28px;
   border: 1px solid #202027;
   font-family: inherit;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 .hero__btn:hover {
   background-color: #fff;
@@ -66,6 +96,7 @@ body {
 
 .about {
   background-color: #202027;
+  position: relative;
 }
 .about__container {
   max-width: 1200px;
@@ -87,12 +118,34 @@ body {
   margin-bottom: 72px;
   max-width: 760px;
 }
+.about__star {
+  position: absolute;
+  z-index: 1;
+}
+.about__star_1 {
+  top: 770px;
+  left: 25px;
+}
+.about__star_2 {
+  top: 822px;
+  left: 40px;
+}
+.about__star_3 {
+  top: 97px;
+  right: 0;
+}
 
 .about__game {
   border-radius: 30px;
   overflow: hidden;
+}
+.about__game:hover {
+  transform: scale(1.05);
+}
+.about__game a {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 .about__game-inner-container {
   background-color: #fff;
@@ -102,6 +155,8 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+  position: relative;
+  z-index: 2;
 }
 .about__game-number {
   background-color: #f7f7f7;
