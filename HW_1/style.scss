@@ -283,6 +283,30 @@ body {
     &__game-desc_5 {
         max-width: 380px;
     }
+
+    &__star {
+        position: absolute;
+    }
+
+    &__star_1 {
+        top: 93px;
+        right: 124px;
+    }
+
+    &__star_2 {
+        top: 126px;
+        right: 45px;
+    }
+
+    &__star_3 {
+        bottom: 45px;
+        right: 150px;
+    }
+
+    &__star_4 {
+        bottom: 65px;
+        right: 52px;
+    }
 }
 
 .footer {

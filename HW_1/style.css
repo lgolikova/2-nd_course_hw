@@ -252,6 +252,25 @@ body {
 .games__game-desc_5 {
   max-width: 380px;
 }
+.games__star {
+  position: absolute;
+}
+.games__star_1 {
+  top: 93px;
+  right: 124px;
+}
+.games__star_2 {
+  top: 126px;
+  right: 45px;
+}
+.games__star_3 {
+  bottom: 45px;
+  right: 150px;
+}
+.games__star_4 {
+  bottom: 65px;
+  right: 52px;
+}
 
 .footer {
   background-color: #BCEC30;
