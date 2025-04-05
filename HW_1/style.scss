@@ -18,6 +18,9 @@ body {
 .hero {
     background-color: $colorLg;
     position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
 
     img {
         position: absolute;
@@ -101,6 +104,8 @@ body {
 .about {
     background-color: $colorBk;
     position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &__container {
         max-width: $contentWidth;
@@ -144,6 +149,10 @@ body {
     &__star_3 {
         top: 97px;
         right: 0;
+    }
+
+    &__star-mob {
+        display: none;
     }
 }
 
@@ -190,5 +199,92 @@ body {
     &-title {
         @extend %headingSm;
         color: $colorBk;
+    }
+}
+
+@media (max-width: 1400px) {
+    .about__game-container {
+        max-width: calc((100% - 64px)/3);
+    }
+}
+
+@media (max-width: 1240px) {
+    .about {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__desc {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        text-align: center;
+        padding-top: 147px;
+        padding-bottom: 131px;
+    }
+
+    .hero__btn {
+        font-size: 16px;
+        width: 285px;
+        height: 55px;
+        padding: 10px 28px;
+        margin: 0 auto;
+    }
+
+    .hero__desc {
+        line-height: normal;
+        margin-bottom: 36px;
+    }
+
+    .hero__star-group,
+    .hero__star-1,
+    .hero__star-2,
+    .hero__star-3,
+    .hero__star-4 {
+        display: none;
+    }
+
+    .hero__star-mob {
+        display: block;
+        position: absolute;
+    }
+
+    .hero__star-mob_1 {
+        top: 64px;
+        left: 91px;
+    }
+
+    .hero__star-mob_2 {
+        top: 97px;
+        left: 37px;
+    }
+
+    .hero__star-mob_3 {
+        top: 0;
+        right: 0;
+    }
+
+    .hero__star-mob_4 {
+        bottom: 74px;
+        right: 86px;
+    }
+
+    .hero__star-mob_5 {
+        bottom: 28px;
+        right: 34px;
+    }
+
+    .hero__btn:hover {
+        background-color: $colorBk;
+        color: #fff;
     }
 }
