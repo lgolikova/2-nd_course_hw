@@ -11,6 +11,10 @@ body {
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center {
     margin: 0 auto;
 }
@@ -98,6 +102,23 @@ body {
 
     span {
         font-weight: 700;
+    }
+}
+
+.line {
+    background-color: $colorGn;
+    padding: 27px 19px;
+    display: flex;
+    gap: 51px;
+    overflow-x: hidden;
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: .04em;
+        color: $colorBk;
+        white-space: nowrap;
     }
 }
 
@@ -247,7 +268,6 @@ body {
     &__game-title {
         @extend %headingMd;
         margin-bottom: 24px;
-        line-height: 100%;
     }
 
     &__game-desc {
@@ -319,7 +339,6 @@ body {
     &__text {
         color: #000;
         font-size: 24px;
-        line-height: 100%;
         font-weight: 600;
     }
 }

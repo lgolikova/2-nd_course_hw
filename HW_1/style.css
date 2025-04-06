@@ -24,6 +24,10 @@ body {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   margin: 0 auto;
 }
@@ -99,6 +103,22 @@ body {
 }
 .hero span {
   font-weight: 700;
+}
+
+.line {
+  background-color: #BCEC30;
+  padding: 27px 19px;
+  display: flex;
+  gap: 51px;
+  overflow-x: hidden;
+}
+.line__text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: #202027;
+  white-space: nowrap;
 }
 
 .about {
@@ -222,7 +242,6 @@ body {
 }
 .games__game-title {
   margin-bottom: 24px;
-  line-height: 100%;
 }
 .games__game-desc {
   font-size: 24px;
@@ -282,7 +301,6 @@ body {
 .footer__text {
   color: #000;
   font-size: 24px;
-  line-height: 100%;
   font-weight: 600;
 }
 
