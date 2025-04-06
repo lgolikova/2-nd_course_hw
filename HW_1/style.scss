@@ -11,6 +11,10 @@ body {
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center {
     margin: 0 auto;
 }
@@ -98,6 +102,23 @@ body {
 
     span {
         font-weight: 700;
+    }
+}
+
+.line {
+    background-color: $colorGn;
+    padding: 27px 19px;
+    display: flex;
+    gap: 51px;
+    overflow-x: hidden;
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: .04em;
+        color: $colorBk;
+        white-space: nowrap;
     }
 }
 
@@ -199,6 +220,126 @@ body {
     &-title {
         @extend %headingSm;
         color: $colorBk;
+    }
+}
+
+.games {
+    background-color: $colorBk;
+    position: relative;
+    padding: 46px 40px 144px;
+
+    &__heading {
+        @extend %headingLg;
+        color: #fff;
+        margin-bottom: 72px;
+        color: #fff;
+    }
+
+    &__container {
+        max-width: $contentWidth;
+        // padding: 94px 0 50px;
+    }
+
+    &__game {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff;
+        border-radius: 30px;
+        overflow: hidden;
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__inner-container {
+        max-width: 600px;
+        padding: 48px;
+    }
+
+    &__game-img {
+        max-width: 600px;
+        // width: 600px;
+    }
+
+    &__game-title {
+        @extend %headingMd;
+        margin-bottom: 24px;
+    }
+
+    &__game-desc {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__game-btn {
+        font-size: 24px;
+        line-height: 142%;
+        background-color: $colorBk;
+        color: #fff;
+        font-family: inherit;
+        border-radius: 60px;
+        padding: 16px 28px;
+        text-align: center;
+        width: 247px;
+        border: 1px solid $colorBk;
+        font-weight: 600;
+    }
+
+    &__game-btn:hover {
+        background-color: #fff;
+        color: $colorBk;
+    }
+
+    &__game-desc_1,
+    &__game-desc_3 {
+        max-width: 440px;
+    }
+
+    &__game-desc_5 {
+        max-width: 380px;
+    }
+
+    &__star {
+        position: absolute;
+    }
+
+    &__star_1 {
+        top: 93px;
+        right: 124px;
+    }
+
+    &__star_2 {
+        top: 126px;
+        right: 45px;
+    }
+
+    &__star_3 {
+        bottom: 45px;
+        right: 150px;
+    }
+
+    &__star_4 {
+        bottom: 65px;
+        right: 52px;
+    }
+}
+
+.footer {
+    background-color: $colorGn;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
     }
 }
 

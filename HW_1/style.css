@@ -1,5 +1,10 @@
-.about__heading, .hero__heading {
+.games__heading, .about__heading, .hero__heading {
   font-size: 64px;
+  font-weight: 700;
+}
+
+.games__game-title {
+  font-size: 48px;
   font-weight: 700;
 }
 
@@ -17,6 +22,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -94,6 +103,22 @@ body {
 }
 .hero span {
   font-weight: 700;
+}
+
+.line {
+  background-color: #BCEC30;
+  padding: 27px 19px;
+  display: flex;
+  gap: 51px;
+  overflow-x: hidden;
+}
+.line__text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  color: #202027;
+  white-space: nowrap;
 }
 
 .about {
@@ -181,6 +206,102 @@ body {
 }
 .about__game-title {
   color: #202027;
+}
+
+.games {
+  background-color: #202027;
+  position: relative;
+  padding: 46px 40px 144px;
+}
+.games__heading {
+  color: #fff;
+  margin-bottom: 72px;
+  color: #fff;
+}
+.games__container {
+  max-width: 1200px;
+}
+.games__game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.games__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.games__inner-container {
+  max-width: 600px;
+  padding: 48px;
+}
+.games__game-img {
+  max-width: 600px;
+}
+.games__game-title {
+  margin-bottom: 24px;
+}
+.games__game-desc {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 36px;
+}
+.games__game-btn {
+  font-size: 24px;
+  line-height: 142%;
+  background-color: #202027;
+  color: #fff;
+  font-family: inherit;
+  border-radius: 60px;
+  padding: 16px 28px;
+  text-align: center;
+  width: 247px;
+  border: 1px solid #202027;
+  font-weight: 600;
+}
+.games__game-btn:hover {
+  background-color: #fff;
+  color: #202027;
+}
+.games__game-desc_1, .games__game-desc_3 {
+  max-width: 440px;
+}
+.games__game-desc_5 {
+  max-width: 380px;
+}
+.games__star {
+  position: absolute;
+}
+.games__star_1 {
+  top: 93px;
+  right: 124px;
+}
+.games__star_2 {
+  top: 126px;
+  right: 45px;
+}
+.games__star_3 {
+  bottom: 45px;
+  right: 150px;
+}
+.games__star_4 {
+  bottom: 65px;
+  right: 52px;
+}
+
+.footer {
+  background-color: #BCEC30;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 @media (max-width: 1400px) {
