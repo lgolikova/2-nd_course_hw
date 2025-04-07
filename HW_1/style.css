@@ -374,4 +374,15 @@ html {
     background-color: #202027;
     color: #fff;
   }
+  .line__text {
+    font-size: 16px;
+  }
+  .line__img {
+    width: 19.34px;
+    height: 19.34px;
+  }
+  .line {
+    padding: 17px 18px;
+    gap: 27.4px;
+  }
 }/*# sourceMappingURL=style.css.map */
