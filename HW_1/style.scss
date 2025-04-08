@@ -443,4 +443,63 @@ html {
         gap: 27.4px;
     }
 
+    .games__game {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .games__game:nth-of-type(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .games__heading {
+        font-size: 40px;
+        margin-bottom: 48px;
+    }
+
+    .games__game-title {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    .games__game-desc {
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+
+    .games__inner-container {
+        padding: 29px 29px 32px;
+        max-width: 100%;
+    }
+
+    .games {
+        padding: 48px 16px;
+    }
+
+    .games__game-btn {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .games__wrapper {
+        gap: 24px;
+    }
+
+    .games__star {
+        display: none;
+    }
+
+    .games__game-img {
+        max-width: 100%;
+    }
+
+    .footer__text {
+        font-size: 16px;
+    }
+
+    .footer {
+        height: 100px;
+    }
 }
