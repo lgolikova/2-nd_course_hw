@@ -10,7 +10,6 @@ function guessNumber() {
         }
         counter++;
         answer = +prompt('Введите число');
-
     }
     alert(`Вы угадали! Количество попыток: ${counter}`);
 }
