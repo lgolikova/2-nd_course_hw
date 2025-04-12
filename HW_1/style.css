@@ -107,10 +107,17 @@ html {
 
 .line {
   background-color: #BCEC30;
+  width: 100%;
+  overflow-x: hidden;
+}
+.line__container {
+  background-color: #BCEC30;
   padding: 27px 19px;
   display: flex;
   gap: 51px;
-  overflow-x: hidden;
+  position: relative;
+  -webkit-animation: move 15s linear infinite;
+          animation: move 15s linear infinite;
 }
 .line__text {
   font-size: 30px;
@@ -121,6 +128,23 @@ html {
   white-space: nowrap;
 }
 
+@-webkit-keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-180%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-180%);
+  }
+}
 .about {
   background-color: #202027;
   position: relative;

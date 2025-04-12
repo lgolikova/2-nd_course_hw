@@ -107,10 +107,17 @@ html {
 
 .line {
     background-color: $colorGn;
-    padding: 27px 19px;
-    display: flex;
-    gap: 51px;
+    width: 100%;
     overflow-x: hidden;
+
+    &__container {
+        background-color: $colorGn;
+        padding: 27px 19px;
+        display: flex;
+        gap: 51px;
+        position: relative;
+        animation: move 15s linear infinite;
+    }
 
     &__text {
         font-size: 30px;
@@ -120,6 +127,17 @@ html {
         color: $colorBk;
         white-space: nowrap;
     }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-180%);
+    }
+
 }
 
 .about {
