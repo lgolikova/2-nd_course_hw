@@ -25,3 +25,39 @@ function guessNumber() {
 }
 
 
+function mathGame() {
+    const arr = ['+', '-', '*', '/'];
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+    let index = Math.floor(Math.random() * 4);
+    let solution;
+
+    let answer = prompt(`Сколько будет ${num1} ${arr[index]} ${num2}?`);
+
+    if (answer === null) {
+        return;
+    }
+
+    switch (index) {
+        case 0:
+            solution = num1 + num2;
+            break;
+        case 1:
+            solution = num1 - num2;
+            break;
+        case 2:
+            solution = num1 * num2;
+            break;
+        case 3:
+            solution = Math.round((num1 / num2) * 100) / 100;
+            break;
+    }
+
+    if (+answer === solution) {
+        alert('Верно! 😎');
+    } else {
+        alert(`Неверно. Правильный ответ: ${solution}`);
+    }
+
+}
+
