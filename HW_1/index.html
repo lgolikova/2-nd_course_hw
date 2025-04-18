@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./images/Star_3.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -35,18 +36,20 @@
         <img class="hero__star-mob hero__star-mob_5" src="./images/star_mob-right-3.svg" alt="star">
     </section>
     <section class="line">
-        <p class="line__text">ВИКТОРИНА</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
-        <p class="line__text">УГАДАЙ ЧИСЛО</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
-        <p class="line__text">ПЕРЕВЕРНИ ТЕКСТ</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
-        <p class="line__text">ПРОСТАЯ АРИФМЕТИКА</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
-        <p class="line__text">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
-        <p class="line__text">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p>
-        <img class="line__img" src="./images/star_line.svg" alt="star">
+        <div class="line__container">
+            <p class="line__text">ВИКТОРИНА</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+            <p class="line__text">УГАДАЙ ЧИСЛО</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+            <p class="line__text">ПЕРЕВЕРНИ ТЕКСТ</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+            <p class="line__text">ПРОСТАЯ АРИФМЕТИКА</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+            <p class="line__text">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+            <p class="line__text">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p>
+            <img class="line__img" src="./images/star_line.svg" alt="star">
+        </div>
     </section>
     <section class="about" id="about">
         <div class="about__container center">
@@ -128,7 +131,7 @@
                     <div class="games__inner-container">
                         <h3 class="games__game-title">Угадай число</h3>
                         <p class="games__game-desc games__game-desc_1">Попробуй угадать случайное число от 1 до 100.</p>
-                        <button type="button" class="games__game-btn">Играть!</button>
+                        <button type="button" class="games__game-btn" onclick="guessNumber()">Играть!</button>
                     </div>
                     <img class="games__game-img" src="./images/game-mob_1.jpg" alt="Угадай число">
                 </article>
@@ -184,6 +187,7 @@
     <footer class="footer">
         <p class="footer__text">Все права защищены.</p>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
