@@ -27,8 +27,8 @@ function guessNumber() {
 
 function mathGame() {
     const arr = ['+', '-', '*', '/'];
-    let num1 = Math.floor(Math.random() * 10) + 1;
-    let num2 = Math.floor(Math.random() * 10) + 1;
+    let num1 = Math.floor(Math.random() * 100) + 1;
+    let num2 = Math.floor(Math.random() * 100) + 1;
     let index = Math.floor(Math.random() * 4);
     let solution;
 
