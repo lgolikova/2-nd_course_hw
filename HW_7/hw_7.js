@@ -53,3 +53,31 @@ function func7(num1, num2) {
 }
 
 console.log(func7(5, 8));
+
+
+//8
+let date = new Date();
+console.log(date);
+
+
+//9
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73); 
+console.log(currentDate);
+
+// let days73 = 73 * 24 * 60 * 60 * 1000;
+// let searchDate = +currentDate + days73;
+// let daysAgo73 = new Date(searchDate);
+// console.log(daysAgo73);
+
+
+//10
+function getDate() {
+    let date = new Date();
+    const days = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+    const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+    let fullDate = 'Дата: ' + date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear() + ' — ' + days[date.getDay()] + '.' +'\n' + 'Время: ' + String(date.getHours()).padStart(2, '0') + ':' + String(date.getMinutes()).padStart(2, '0') + ':' + String(date.getSeconds()).padStart(2, '0') + '.';
+    return fullDate;
+}
+
+console.log(getDate());
