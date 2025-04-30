@@ -148,3 +148,38 @@ function playQuiz() {
     alert(`Игра окончена. Количество правильных ответов: ${counter}`);
 
 }
+
+
+function playRSP() {
+    let userChoice = prompt('Укажите ваш выбор: камень, ножницы или бумага');
+
+    const arr = ['камень', 'ножницы', 'бумага'];
+    let computerChoice = arr[Math.floor(Math.random()*3)];
+
+    let result = '';
+
+    if (userChoice === null) {
+        return;
+    }
+
+    if (userChoice.toLowerCase().trim() === computerChoice) {
+        result = 'Ничья.'
+    } else if (userChoice.toLowerCase().trim() === 'камень' && computerChoice === 'ножницы') {
+        result = 'Победа!';
+    } else if (userChoice.toLowerCase().trim() === 'ножницы' && computerChoice === 'бумага') {
+        result = 'Победа!';
+    } else if (userChoice.toLowerCase().trim() === 'бумага' && computerChoice === 'камень') {
+        result = 'Победа!';
+    } else if (userChoice.toLowerCase().trim() === 'ножницы' && computerChoice === 'камень') {
+        result = 'Поражение.';
+    } else if (userChoice.toLowerCase().trim() === 'бумага' && computerChoice === 'ножницы') {
+        result = 'Поражение.';
+    } else if (userChoice.toLowerCase().trim() === 'камень' && computerChoice === 'бумага') {
+        result = 'Поражение.';
+    } else {
+        alert('Вы ввели некорректное значение');
+        return
+    }
+
+    alert(`${result}\nВаш выбор: ${userChoice}.\nВыбор компьютера: ${computerChoice}.`);
+}
