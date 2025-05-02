@@ -288,6 +288,7 @@ html {
 .games__game-btn:hover {
   background-color: #fff;
   color: #202027;
+  cursor: pointer;
 }
 .games__game-desc_1, .games__game-desc_3 {
   max-width: 440px;
