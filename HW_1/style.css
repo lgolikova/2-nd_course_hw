@@ -102,7 +102,7 @@ html {
   color: #202027;
 }
 .hero span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .line {
@@ -176,15 +176,15 @@ html {
   z-index: 1;
 }
 .about__star_1 {
-  top: 770px;
+  top: 769px;
   left: 25px;
 }
 .about__star_2 {
   top: 822px;
-  left: 40px;
+  left: 42px;
 }
 .about__star_3 {
-  top: 97px;
+  top: 108px;
   right: 0;
 }
 .about__star-mob {
@@ -300,19 +300,19 @@ html {
   position: absolute;
 }
 .games__star_1 {
-  top: 93px;
+  top: 90px;
   right: 124px;
 }
 .games__star_2 {
-  top: 126px;
-  right: 45px;
+  top: 124px;
+  right: 48px;
 }
 .games__star_3 {
-  bottom: 45px;
+  bottom: 49px;
   right: 150px;
 }
 .games__star_4 {
-  bottom: 65px;
+  bottom: 69px;
   right: 52px;
 }
 
@@ -365,7 +365,7 @@ html {
     max-width: 100%;
   }
   .games {
-    padding: 48px 16px;
+    padding: 48.88px 16px;
   }
   .games__game-btn {
     font-size: 16px;
@@ -450,6 +450,7 @@ html {
   }
   .games__game-img {
     max-width: 100%;
+    border-radius: 30px;
   }
   .footer__text {
     font-size: 16px;
