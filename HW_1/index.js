@@ -183,3 +183,16 @@ function playRSP() {
 
     alert(`${result}\nВаш выбор: ${correctedUserChoice}.\nВыбор компьютера: ${computerChoice}.`);
 }
+
+
+document.getElementById('btn').addEventListener('click', () => {
+    const block = document.querySelector('.games');
+
+    let a = Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+    let b = Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+    let c = Math.floor(Math.random()*256).toString(16).padStart(2, '0');
+
+    let color = '#'.concat(a, b, c);
+
+    block.style.backgroundColor = color;
+})
